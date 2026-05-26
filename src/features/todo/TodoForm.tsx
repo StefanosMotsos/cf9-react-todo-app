@@ -11,7 +11,7 @@ const TodoForm = ({onAdd, inputRef}: TodoFormProps) => {
 
     const handleSubmit = (e: React.SubmitEvent) => {
         e.preventDefault();
-        if (text.trim() === "") {
+        if (text.trim() !== "") {
             onAdd(text)
             setText("")
         }
