@@ -3,9 +3,16 @@ export interface LayoutProps {
     addClasses?: string;
 }
 
-export interface ButtonProps {
+export type ButtonProps = {
     onClick?: () => void;
     disabled?: boolean;
     label: string;
+    addClasses?: string;
+}
+
+export type IconButtonProps = {
+    onClick?: () => void;
+    disabled?: boolean;
+    icon: React.ReactNode;
     addClasses?: string;
 }
